@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System Usage Monitor</title>
+</head>
+<body style="background-color: #0d0d0d; color: #e0f7fa; font-family: 'Courier New', Courier, monospace; font-size: 18px; margin: 0; padding: 0;">
+
+  <div style="padding: 30px; max-width: 1000px; margin: auto;">
+
+    <form onsubmit="formSubmit(event)" style="display: flex; flex-direction: column; gap: 12px; background-color: #1a1a1a; padding: 20px; border-radius: 8px;">
+      <h2 style="color: #00ffff;">Submit System Stats</h2>
+
+      <input type="text" name="time" placeholder="Time" required style="padding: 10px; border: none; border-radius: 4px; background-color: #333; color: #fff;">
+      <input type="text" name="cpu" placeholder="CPU Usage" required style="padding: 10px; border: none; border-radius: 4px; background-color: #333; color: #fff;">
+      <input type="text" name="memory" placeholder="Memory Usage" required style="padding: 10px; border: none; border-radius: 4px; background-color: #333; color: #fff;">
+      <input type="text" name="disk" placeholder="Disk Usage" required style="padding: 10px; border: none; border-radius: 4px; background-color: #333; color: #fff;">
+      <input type="url" name="image" placeholder="Image URL (optional)" style="padding: 10px; border: none; border-radius: 4px; background-color: #333; color: #fff;">
+
+      <button type="submit" style="padding: 10px; background-color: #00cccc; color: black; font-weight: bold; border: none; border-radius: 4px;">Submit</button>
+      <p id="responseMsg" style="color: lime;"></p>
+    </form>
+
+    <h2 style="margin-top: 40px; color: #00ffff;">Submitted Data</h2>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+      <thead>
+        <tr style="background-color: #111;">
+          <th style="padding: 10px; border-bottom: 1px solid #333;">Time</th>
+          <th style="padding: 10px; border-bottom: 1px solid #333;">CPU Usage</th>
+          <th style="padding: 10px; border-bottom: 1px solid #333;">Memory Usage</th>
+          <th style="padding: 10px; border-bottom: 1px solid #333;">Disk Usage</th>
+          <th style="padding: 10px; border-bottom: 1px solid #333;">Image</th>
+        </tr>
+      </thead>
+      <tbody id="data-table">
+        <!-- Populated by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    
+  </script>
+
+</body>
+</html>
